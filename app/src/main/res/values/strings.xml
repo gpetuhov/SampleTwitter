@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">SampleTwitter</string>
 
-    <!-- Twitter -->
-    <string name="com.twitter.sdk.android.CONSUMER_KEY">XXXXXXXXXXX</string>
-    <string name="com.twitter.sdk.android.CONSUMER_SECRET">XXXXXXXXXXX</string>
+    <!-- Twitter strings for key and secret are created in build.gradle script from ~/.gradle/gradle.properties file -->
 </resources>

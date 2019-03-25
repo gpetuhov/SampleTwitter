@@ -13,9 +13,16 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            // Create string resources from Twitter key and secret from ~/.gradle/gradle.properties file
+            resValue 'string', "com.twitter.sdk.android.CONSUMER_KEY", Twitter_ConsumerKey
+            resValue 'string', "com.twitter.sdk.android.CONSUMER_SECRET", Twitter_ConsumerSecret
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue 'string', "com.twitter.sdk.android.CONSUMER_KEY", Twitter_ConsumerKey
+            resValue 'string', "com.twitter.sdk.android.CONSUMER_SECRET", Twitter_ConsumerSecret
         }
     }
     compileOptions {
