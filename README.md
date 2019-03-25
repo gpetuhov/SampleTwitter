@@ -11,6 +11,7 @@ Using Twitter SDK in Android.
 ## Notes
 * This example uses Twitter Kit SDK, support for which has been discontinued: https://blog.twitter.com/developer/en_us/topics/tools/2018/discontinuing-support-for-twitter-kit-sdk.html
 * To use Twitter SDK we have to apply for a Twitter developer account first
+* When registering new app using Twitter Kit SDK, set callback URL to: twittersdk://
 
 ## References
 https://developer.twitter.com/en/docs/publisher-tools/twitterkit/overview
